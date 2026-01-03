@@ -1,3 +1,6 @@
+import Structural.decorator.Icecreamcone;
+import Structural.decorator.OrangeCone;
+import Structural.decorator.Vanila;
 import creationaldesignpattern.singleton.solution.ConfigManager;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -5,10 +8,8 @@ import creationaldesignpattern.singleton.solution.ConfigManager;
 public class Main {
     public static void main(String[] args) {
 
-        ConfigManager  configManager = ConfigManager.getInstance();
-        configManager.set( "name", "mosh");
-
-        System.out.println(configManager.get("name"));
+      Icecreamcone orangeCone = new Vanila(new OrangeCone());
+        System.out.println(orangeCone.getConstituents());
 
     }
 }

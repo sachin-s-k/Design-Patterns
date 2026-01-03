@@ -1,0 +1,7 @@
+package Behavioural.Strategy.before;
+
+public enum TransportMode {
+    CAR,
+    BIKE,
+    WALK
+}
